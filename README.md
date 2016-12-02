@@ -1,5 +1,8 @@
 # pixelete
-Autonomous bot for Image Processing Eventode is specifically designed for the Pixelete 2016 event's Problem Statement
+Autonomous bot for Image Processing Event
+
+
+This project's code is specifically designed for the Pixelete 2016 event's Problem Statement
 Requirements
 1.Matlab-Arduino library
 2.Arduino
