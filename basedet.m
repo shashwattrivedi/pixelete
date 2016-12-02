@@ -1,0 +1,168 @@
+%%
+k=r.trianglenn;
+trivec.x=(node(k).x-1)*(d1/corx)+(d1/(2*corx))-r.triangle(2);
+trivec.y=(node(k).y-1)*(d2/cory)+(d2/(2*cory))-r.triangle(1);
+nodevec.x=node(k).x-node(k+1).x;
+nodevec.y=node(k).y-node(k+1).y;
+costheta=(trivec.x*nodevec.x+trivec.y*nodevec.y)/(sqrt(trivec.x^2+trivec.y^2)*sqrt(nodevec.x^2+nodevec.y^2));
+    theta=abs(acosd(costheta))
+if(theta>140)
+    u=k+1;
+end
+%k=r.trianglnn;
+trivec.x=(node(k).x-1)*(d1/corx)+(d1/(2*corx))-r.triangle(2);
+trivec.y=(node(k).y-1)*(d2/cory)+(d2/(2*cory))-r.triangle(1);
+nodevec.x=node(k).x-node(k-1).x;
+nodevec.y=node(k).y-node(k-1).y;
+costheta=(trivec.x*nodevec.x+trivec.y*nodevec.y)/(sqrt(trivec.x^2+trivec.y^2)*sqrt(nodevec.x^2+nodevec.y^2));
+    theta=abs(acosd(costheta))
+if(theta>140)
+    u=k-1;
+end
+% k=r.trianglnn;
+trivec.x=(node(k).x-1)*(d1/corx)+(d1/(2*corx))-r.triangle(2);
+trivec.y=(node(k).y-1)*(d2/cory)+(d2/(2*cory))-r.triangle(1);
+nodevec.x=node(k).x-node(k+cory).x;
+nodevec.y=node(k).y-node(k+cory).y;
+costheta=(trivec.x*nodevec.x+trivec.y*nodevec.y)/(sqrt(trivec.x^2+trivec.y^2)*sqrt(nodevec.x^2+nodevec.y^2));
+    theta=abs(acosd(costheta))
+if(theta>140)
+    u=k+cory;
+end
+% k=r.trianglnn;
+trivec.x=(node(k).x-1)*(d1/corx)+(d1/(2*corx))-r.triangle(2);
+trivec.y=(node(k).y-1)*(d2/cory)+(d2/(2*cory))-r.triangle(1);
+nodevec.x=node(k).x-node(k-cory).x;
+nodevec.y=node(k).y-node(k-cory).y;
+costheta=(trivec.x*nodevec.x+trivec.y*nodevec.y)/(sqrt(trivec.x^2+trivec.y^2)*sqrt(nodevec.x^2+nodevec.y^2));
+    theta=abs(acosd(costheta))
+if(theta>140)
+    u=k-cory;
+end
+r.trianglebnn=u;
+%%
+k=bl.trianglenn;
+trivec.x=(node(k).x-1)*(d1/corx)+(d1/(2*corx))-r.triangle(2);
+trivec.y=(node(k).y-1)*(d2/cory)+(d2/(2*cory))-r.triangle(1);
+nodevec.x=node(k).x-node(k+1).x;
+nodevec.y=node(k).y-node(k+1).y;
+costheta=(trivec.x*nodevec.x+trivec.y*nodevec.y)/(sqrt(trivec.x^2+trivec.y^2)*sqrt(nodevec.x^2+nodevec.y^2));
+    theta=abs(acosd(costheta));
+if(theta>150)
+    u=k+1;
+end
+%k=r.trianglnn;
+trivec.x=(node(k).x-1)*(d1/corx)+(d1/(2*corx))-r.triangle(2);
+trivec.y=(node(k).y-1)*(d2/cory)+(d2/(2*cory))-r.triangle(1);
+nodevec.x=node(k).x-node(k-1).x;
+nodevec.y=node(k).y-node(k-1).y;
+costheta=(trivec.x*nodevec.x+trivec.y*nodevec.y)/(sqrt(trivec.x^2+trivec.y^2)*sqrt(nodevec.x^2+nodevec.y^2));
+    theta=abs(acosd(costheta));
+if(theta>150)
+    u=k-1;
+end
+% k=r.trianglnn;
+trivec.x=(node(k).x-1)*(d1/corx)+(d1/(2*corx))-r.triangle(2);
+trivec.y=(node(k).y-1)*(d2/cory)+(d2/(2*cory))-r.triangle(1);
+nodevec.x=node(k).x-node(k+cory).x;
+nodevec.y=node(k).y-node(k+cory).y;
+costheta=(trivec.x*nodevec.x+trivec.y*nodevec.y)/(sqrt(trivec.x^2+trivec.y^2)*sqrt(nodevec.x^2+nodevec.y^2));
+    theta=abs(acosd(costheta));
+if(theta>150)
+    u=k+cory;
+end
+% k=r.trianglnn;
+trivec.x=(node(k).x-1)*(d1/corx)+(d1/(2*corx))-r.triangle(2);
+trivec.y=(node(k).y-1)*(d2/cory)+(d2/(2*cory))-r.triangle(1);
+nodevec.x=node(k).x-node(k-cory).x;
+nodevec.y=node(k).y-node(k-cory).y;
+costheta=(trivec.x*nodevec.x+trivec.y*nodevec.y)/(sqrt(trivec.x^2+trivec.y^2)*sqrt(nodevec.x^2+nodevec.y^2));
+    theta=abs(acosd(costheta));
+if(theta>150)
+    u=k-cory;
+end
+b.trianglebnn=u;
+%%
+k=g.trianglenn;
+trivec.x=(node(k).x-1)*(d1/corx)+(d1/(2*corx))-r.triangle(2);
+trivec.y=(node(k).y-1)*(d2/cory)+(d2/(2*cory))-r.triangle(1);
+nodevec.x=node(k).x-node(k+1).x;
+nodevec.y=node(k).y-node(k+1).y;
+costheta=(trivec.x*nodevec.x+trivec.y*nodevec.y)/(sqrt(trivec.x^2+trivec.y^2)*sqrt(nodevec.x^2+nodevec.y^2));
+    theta=abs(acosd(costheta));
+if(theta<30)
+    u=k+1;
+end
+%k=r.trianglnn;
+trivec.x=(node(k).x-1)*(d1/corx)+(d1/(2*corx))-r.triangle(2);
+trivec.y=(node(k).y-1)*(d2/cory)+(d2/(2*cory))-r.triangle(1);
+nodevec.x=node(k).x-node(k-1).x;
+nodevec.y=node(k).y-node(k-1).y;
+costheta=(trivec.x*nodevec.x+trivec.y*nodevec.y)/(sqrt(trivec.x^2+trivec.y^2)*sqrt(nodevec.x^2+nodevec.y^2));
+    theta=abs(acosd(costheta));
+if(theta<30)
+    u=k-1;
+end
+% k=r.trianglnn;
+trivec.x=(node(k).x-1)*(d1/corx)+(d1/(2*corx))-r.triangle(2);
+trivec.y=(node(k).y-1)*(d2/cory)+(d2/(2*cory))-r.triangle(1);
+nodevec.x=node(k).x-node(k+cory).x;
+nodevec.y=node(k).y-node(k+cory).y;
+costheta=(trivec.x*nodevec.x+trivec.y*nodevec.y)/(sqrt(trivec.x^2+trivec.y^2)*sqrt(nodevec.x^2+nodevec.y^2));
+    theta=abs(acosd(costheta));
+if(theta<30)
+    u=k+cory;
+end
+% k=r.trianglnn;
+trivec.x=(node(k).x-1)*(d1/corx)+(d1/(2*corx))-r.triangle(2);
+trivec.y=(node(k).y-1)*(d2/cory)+(d2/(2*cory))-r.triangle(1);
+nodevec.x=node(k).x-node(k-cory).x;
+nodevec.y=node(k).y-node(k-cory).y;
+costheta=(trivec.x*nodevec.x+trivec.y*nodevec.y)/(sqrt(trivec.x^2+trivec.y^2)*sqrt(nodevec.x^2+nodevec.y^2));
+    theta=abs(acosd(costheta));
+if(theta<30)
+    u=k-cory;
+end
+g.trianglebnn=u;
+%%
+k=y.trianglenn;
+trivec.x=(node(k).x-1)*(d1/corx)+(d1/(2*corx))-r.triangle(2);
+trivec.y=(node(k).y-1)*(d2/cory)+(d2/(2*cory))-r.triangle(1);
+nodevec.x=node(k).x-node(k+1).x;
+nodevec.y=node(k).y-node(k+1).y;
+costheta=(trivec.x*nodevec.x+trivec.y*nodevec.y)/(sqrt(trivec.x^2+trivec.y^2)*sqrt(nodevec.x^2+nodevec.y^2));
+    theta=abs(acosd(costheta));
+if(theta<90)
+    u=k+1;
+end
+%k=r.trianglnn;
+trivec.x=(node(k).x-1)*(d1/corx)+(d1/(2*corx))-r.triangle(2);
+trivec.y=(node(k).y-1)*(d2/cory)+(d2/(2*cory))-r.triangle(1);
+nodevec.x=node(k).x-node(k-1).x;
+nodevec.y=node(k).y-node(k-1).y;
+costheta=(trivec.x*nodevec.x+trivec.y*nodevec.y)/(sqrt(trivec.x^2+trivec.y^2)*sqrt(nodevec.x^2+nodevec.y^2));
+    theta=abs(acosd(costheta));
+if(theta<90)
+    u=k-1;
+end
+% k=r.trianglnn;
+trivec.x=(node(k).x-1)*(d1/corx)+(d1/(2*corx))-r.triangle(2);
+trivec.y=(node(k).y-1)*(d2/cory)+(d2/(2*cory))-r.triangle(1);
+nodevec.x=node(k).x-node(k+cory).x;
+nodevec.y=node(k).y-node(k+cory).y;
+costheta=(trivec.x*nodevec.x+trivec.y*nodevec.y)/(sqrt(trivec.x^2+trivec.y^2)*sqrt(nodevec.x^2+nodevec.y^2));
+    theta=abs(acosd(costheta));
+if(theta<90)
+    u=k+cory;
+end
+% k=r.trianglnn;
+trivec.x=(node(k).x-1)*(d1/corx)+(d1/(2*corx))-r.triangle(2);
+trivec.y=(node(k).y-1)*(d2/cory)+(d2/(2*cory))-r.triangle(1);
+nodevec.x=node(k).x-node(k-cory).x;
+nodevec.y=node(k).y-node(k-cory).y;
+costheta=(trivec.x*nodevec.x+trivec.y*nodevec.y)/(sqrt(trivec.x^2+trivec.y^2)*sqrt(nodevec.x^2+nodevec.y^2));
+    theta=abs(acosd(costheta));
+if(theta<90)
+    u=k-cory;
+end
+y.trianglebnn=u;
